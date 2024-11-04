@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acounts</title>
+    <style>
+        body{
+            background: #1f262a;
+            color: white;
+        }
+    </style>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+<body>
+     
+    <header>
+    <div class="header">
+        <div class="container">
+            <div class="navbar"> 
+                <div class="logo">
+                    <img src="images/streetwear logo.jpg" width="125px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li> <a href="index-html.html">Home</a> </li>
+                        <li> <a href="products.html">Products</a> </li>
+                        <li> <a href="About_Us.html">About</a> </li>
+                        <li> <a href="Contact_us.html">Contact</a> </li>
+                        <li> <a href="Accounts.html">Account</a> </li>
+                    </ul>
+                </nav>
+                <a href="checkout.html"><img src="images/cart.png"  width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        
+              </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfK97SIM8A0RnER05lhVATCCTDBvd3Eo5mCH0TT7rpgvH5o5g/viewform?embedded=true" width="640" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>    
+</main>
+
+
+    <footer>
+    
+
+    
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3> Hope the website was user-friendly </h3>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="images/streetwear logo.jpg" width="100">
+                        <p>Our purpose Is To sustainably Make the Pleasure and Benefits of thrifting Accessible to the Many</p>
+                    </div>
+    
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li><a href="news.html">Blog Posts</a> </li>
+                            
+                        </ul>
+                    </div>
+    
+                    <div class="footer-col-4"></div>
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="https://www.instagram.com/thrifttreasureatl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                            
+                        </ul>
+                    </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </footer>
+    
+    
+    <!-----js for toggle menu----->
+    
+    <script>
+        var menuitems = document.getElementById("menuitems");
+    
+        menuitems.style.maxHeight = "0px"
+    
+        function menutoggle(){
+            if(menuitems.style.maxHeight = "0px")
+            {
+            menuitems.style.maxHeight = "200px"
+            }
+            else{
+                menuitems.style.maxHeight= "0px";
+            }
+        }
+    
+    </script>
+    
+
+</body>
+</html>

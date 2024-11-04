@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | ThriftCulture</title>
+    <style>
+        body{
+            background: #1f262a;
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    
+</head>
+<body>
+
+    <main>
+<div class="header">
+<div class="container">
+    <div class="navbar"> 
+        <div class="logo">
+            <img src="images/streetwear logo.jpg" width="125px">
+        </div>
+        <nav>
+            <ul id="menuitems">
+                <li> <a href="index-html.html">Home</a> </li>
+                <li> <a href="products.html">Products</a> </li>
+                <li> <a href="About Us.html">About</a> </li>
+                <li> <a href="Contact us.html">Contact</a> </li>
+                <li> <a href="Accounts.html">Account</a> </li>
+            </ul>
+        </nav>
+        <a href="checkout.html"><img src="images/cart.png"  width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+      </div>
+    </div>
+</div>
+
+<!-----single product dtl---->
+
+<div class="small-container single-product">
+    <div class="row">
+
+        <div class="col-2">
+            <img src="images/allp8.jpg" width="100%">
+        </div>
+        <div class="col-2">
+            <p>Home / Tees</p>
+            <h1>Purple Nike Totenham Shirt</h1>
+            <h4>R130.00</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XLarge</option>
+            </select>
+            <a href="checkout8.html" class="btn">Add To Cart</a>
+            <h3>Product details</h3>
+            <br>
+            <p>Slightly Damaged</p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+ 
+    <footer>
+    
+
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> Hope the website was user-friendly </h3>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/streetwear logo.jpg" width="100">
+                    <p>Our purpose Is To sustainably Make the Pleasure and Benefits of thrifting Accessible to the Many</p>
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li><a href="news.html">Blog Posts</a> </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-col-4"></div>
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/thrifttreasureatl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </footer>
+
+
+<!-----js for toggle menu----->
+
+<script>
+    var menuitems = document.getElementById("menuitems");
+
+    menuitems.style.maxHeight = "0px"
+
+    function menutoggle(){
+        if(menuitems.style.maxHeight = "0px")
+        {
+        menuitems.style.maxHeight = "200px"
+        }
+        else{
+            menuitems.style.maxHeight= "0px";
+        }
+    }
+
+</script>
+
+</body>
+</html>
