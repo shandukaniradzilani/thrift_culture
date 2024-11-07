@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <style>body{
-        background: #1f262a;
-        color: white; 
-    }
-        </style>
-    
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
-    
-
+    <style>
+        body{
+            background-color: #1f262a;
+        }
+    </style>
 </head>
-
 <body>
-<header>
-    <div class="header">
+
+
+    <header>
+        <div class="header">
         <div class="container">
             <div class="navbar"> 
                 <div class="logo">
@@ -35,32 +32,44 @@
                 </nav>
                 <a href="checkout.html"><img src="images/cart.png"  width="30px" height="30px"></a>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
-
+        
               </div>
             </div>
-     </div>
-</header>   
-
-
-<main>
-    <div class="container">
-        <div class="content">
-            <h1>Contact Us</h1>
-
-           <ul>
-            <li>Phone Number: 0658112851</li>
-            <li>Email:<a href="radzilanis07@gmail.com">radzilanis07@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/thrifttreasureatl?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a></li>  <i class="fa fa-instagram"></ i>
-            </ul>
-
         </div>
+    </header>
+        
+
+
+
+    <main></main>
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="mailto:ST10445686.imcconnect.co.za" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
+
+    <script src="script.js"></script>
 </main>
 
-  
+
 <footer>
     
-    <div class="footer"> 
+
+    
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="footer-col-1">
@@ -112,11 +121,7 @@
             menuitems.style.maxHeight= "0px";
         }
     }
-
 </script>
-
-
-
 
 </body>
 </html>
